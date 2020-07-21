@@ -9,9 +9,14 @@
 // import * as d3 from 'd3';
 // require("./stylesheet.css");
 
+<<<<<<< HEAD
 d3.select("#inputfile").on("change", getCsv);
 function getCsv() {
   d3.select("#inputfile").attr("hidden", true);
+=======
+$("#inputfile").change(function () {
+  $("#inputfile").attr("hidden", true);
+>>>>>>> 77f0622 (Merge pull request #121 from caoyu-yiyue/master)
   var r = new FileReader();
   r.readAsText(this.files[0], config.encoding);
   r.onload = function () {
